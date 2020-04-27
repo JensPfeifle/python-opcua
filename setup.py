@@ -41,6 +41,9 @@ setup(name="opcua",
                         'uadiscover = opcua.tools:uadiscover',
                         'uacall = opcua.tools:uacall',
                     ]
-                    }
-      )
+                    },     
+      package_data={"opcua": ["py.typed"]},
+      zip_safe=False,  # mypy
+     )
+
 
